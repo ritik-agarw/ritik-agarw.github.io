@@ -17,16 +17,16 @@ h1{
 }
 
 .container {
-    display: flex;
-    justify-content: space-evenly;
+    display: inline-flex;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .card {
     background-color: rgb(213, 240, 140);
     height: 360px;
     width: 260px;
-    margin-right: 10px;
+    margin: 0px 30px;
     padding: 20px;
     border-radius: 20px;
     text-align: center;
