@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: arial;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #121212;
+}
+
+/*First View*/
+
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+/*------------------------------NAVBAR----------------------------------------*/
+
+
+.header{
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.header .menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu li a{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    transition: 0.4s;
+}
+.show-btn, .hide-btn{
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.4s;
+    line-height: 10vh;
+    margin-right: 20px;
+    display: none;
+}
+.menu li a:hover, .show-btn:hover, .hide-btn:hover, #home{
+    color: white;
+    -webkit-tap-highlight-color: transparent;
+}
+.show-btn{
+    float: right;
+}
+#chk{
+    visibility: hidden;
+    z-index: -10;
+}
+
+/*------------------------------NAVBAR----------------------------------------*/
+
+
+
+/*------------------------------BODY----------------------------------------*/
+
+.body{
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    background-image: url(../Images/assign-8/lappy.jpg);
+    background-repeat: no-repeat;;
+    background-position: center;
+    background-size: 80%;
+}
+
+/*------------------------------BODY----------------------------------------*/
+
+h1{
+    color: white;
+    position: absolute;
+    top: 15vh;
+}
+
+h2{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*------------------------------MEMBERS----------------------------------------*/
+.section-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dot {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(177, 166, 140);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px;
+}
+.dot img{
+    height: 200px;
+    width: 200px;
+}
+
+/*------------------------------MEMBERS----------------------------------------*/
+
+
+
+/*------------------------------PROJECTS----------------------------------------*/
+.section-2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.left{
+    background-color: rgba(255, 217, 0, 0.664);
+    height: 80vh;
+    width: 48%;
+    margin-right: 1%;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.left h2{
+    font-size: 2rem;
+    margin: 30px;
+}
+.left p{
+    font-size: larger;
+    line-height: 30px;
+    text-align: center;
+}
+.right{
+    height: 80vh;
+    width: 49%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.article{
+    height: 25vh;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    /* text-align: center;
+    line-height: 25vh; */
+}
+.article img{
+    width: 100%;
+    height: 25vh;
+}
+.article h2{
+    position: relative;
+    top: -100%;
+    font-size: 2rem;
+    margin: 0px;
+}
+
+/*------------------------------PROJECTS----------------------------------------*/
+
+
+/*-----------------------------TECHNOLOGIES-------------------------------------*/
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgb(240, 222, 140);
+    height: 360px;
+    width: 260px;
+    margin: 30px 20px;
+    padding: 18px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.container img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container h3{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.para{
+    height: 100px;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+
+.container a{
+    display: block;
+    text-decoration: none;
+    background-color: rgb(255, 0, 0);
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.container a:hover{
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+}
+.container p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/*-----------------------------TECHNOLOGIES-------------------------------------*/
+
+
+
+/*-----------------------------FOOTER-------------------------------------*/
+.footer{
+    height: 20vh;
+    background-color:rgba(255, 217, 0, 0.822);
+    margin: 10px;
+    border-radius: 30px;
+    text-align: center;
+    color: black;
+    padding: 5px 10px;
+}
+.footer a{
+    color: rgb(255, 0, 0);
+    padding: 3px 5px;
+}
+.footer a:hover{
+    color: blue;
+}
+.footer p, .footer a{
+    font-family: cursive;
+    font-size: 1.4rem;
+}
+
+/*-----------------------------FOOTER-------------------------------------*/
+
+
+/*To make heading visible*/
+
+:target:before {
+    content: "";
+    display: block;
+    height: 100px;
+}
+
+
+/*----------------------MEDIA QUERY FOR 800px-----------------------------*/
+
+@media only screen and (max-width: 800px){
+    
+    .show-btn, .hide-btn{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #333;
+        transition: .7s;
+        padding-top: 60px;
+        padding-bottom: 150px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #chk:checked ~ .menu {
+        right: 0;
+    }
+    
+    .hide-btn{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .body{
+        background-size: contain;
+    }
+    h1{
+        margin: 0 10px;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .left, .right{
+        margin: 15px auto;
+        width: 90%;
+        height: 100%;
+    }
+    .article{
+        margin: 10px 0;
+    }
+    .left h2, .right h2{
+        font-size: 1.5rem;
+    }
+    .footer a, .footer p{
+        font-size: 1.1rem;
+    }
+}
+
+/*----------------------MEDIA QUERY FOR 800px-----------------------------*/
