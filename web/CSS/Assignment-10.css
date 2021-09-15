@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: wheat;
+}
+header{
+    width: 100%;
+    height: 10%;
+    background-color: #2f3640;
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+header img{
+    height: 35px;
+    margin-right: 10px;
+}
+header h1{
+    color: white;
+    font-size: 25px;
+}
+.hide-btn, .show-btn{
+    color: white;
+    position: fixed;
+    left: 20px;
+    top: 15px;
+    transition: .4s;
+    font-size: 30px;
+}
+.hide-btn{
+    opacity: 0;;
+}
+#chk{
+    visibility: hidden;
+    z-index: -10;
+}
+#chk:checked ~ .sidebar{
+    left: 0;
+}
+#chk:checked ~ .show-btn
+{
+    opacity: 0;
+}
+#chk:checked ~ .hide-btn
+{
+    opacity: 1;
+}
+#chk:checked ~ .content
+{
+    float: right;
+    width: 80%;
+}
+.content{
+    float: right;
+    transition: .7s;
+    padding: 80px 30px 30px;
+    width: 100%;
+}
+.content img{
+    height: 60vh;
+    display: block;
+    margin: auto;
+}
+.content p{
+    margin-top: 30px;
+    text-align: justify;
+}
+.sidebar{
+    width: 20%;
+    height: 90%;
+    position: fixed;
+    top: 10%;
+    background-color: hsl(221, 15%, 25%);
+    transition: .7s;
+    left: -100%;
+}
+ul li{
+    border-bottom: 2px solid rgba(255,255,255,.1);
+    
+}
+ul li a {
+    display: block;
+    color: white;
+    padding: 18px;
+    transition: .3s
+}   
+
+.sidebar ul li a:hover{
+    border-left: 5px solid white;
+}
+.sidebar span{
+    margin-left: 10px;
+}
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    position: absolute;
+    padding: 15px 0;
+    bottom: 0;
+}
+.social i{
+    font-size: 30px;
+    color: white;
+}
+.social i:hover{
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 500px){
+    header h1{
+        display: none;
+    }
+    header img
+    {
+        height: 40px;
+    }
+    .sidebar
+    {
+        width: 100%;
+        height: 90%;
+    }
+    ul li
+    {            
+        text-align: center;
+    }
+    .content img{
+        height: auto;
+        width: 60vw;
+    }
+    ul li a{
+        margin: 15px 0;
+    }
+}
