@@ -81,7 +81,7 @@ header h1{
     top: 10%;
     background-color: hsl(221, 15%, 25%);
     transition: .7s;
-    left: -100%;
+    left: -20%;
 }
 ul li{
     border-bottom: 2px solid rgba(255,255,255,.1);
